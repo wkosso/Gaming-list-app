@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>My Game App</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="nav-bar">
+		<div class="app-title">Top 50 Ps4 Game App</div>
+		<div class="buttons">
+     
+      <select name="topGames" onchange="getGame(this.value)">
+				<option disabled selected>Top 5 Fav Game's </option>
+				<option value="Uncharted 4">Uncharted 4</option>
+  <option value="Horizon Zero Dawn">Horizon Zero Dawn</option>
+  <option value="Metal Gear Solid V: The Phantom Pain">Metal Gear Solid V: The Phantom Pain</option>
+  <option value="Rise of the Tomb Raider">Rise of the Tomb Raider</option>
+  <option value="Batman: Arkham Knight">Batman: Arkham Knight</option>
+</select>
+      
+			<button onclick="sortByGenres()">By Genres</button>
+			<button onclick="sortByYear()">By Year</button>
+			<button onclick="sortByNumVotes()">By Number of Votes</button>
+      <button onclick="sortByRanking()">Ranking </button>
+     
+     
+  
+     
+			<input id="search" onkeyup="searchTitles(this.value)" placeholder="Search Titles">
+		</div>
+	</div>
+
+	<div id="results" class="grid-container">
+		<!--Javascript will insert content here...  -->
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+	<script src="script.js"></script>
+  
+ 
+
+  
+</body>
+
+</html>

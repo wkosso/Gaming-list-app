@@ -1,0 +1,52 @@
+body {
+  background-color: lightgray;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+	margin: 15px;
+}
+
+.card {
+  display: grid;
+  grid-gap: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 3px red;
+  border-radius: 5px;
+  padding: 9px;
+}
+
+.movie-title {
+  color: darkred;
+  font-weight: bold;
+}
+
+.movie-year {
+  color: gray;
+}
+
+
+
+.nav-bar{
+  display: grid;
+  position: sticky;
+  top: 0;
+  grid-template-columns: 1fr 1fr;
+  background-color: grey;
+  color: white;
+  padding: 7px;
+  margin-bottom: 9px;
+}
+
+.app-Title {
+  align-self: center;
+}
+
+.buttons {
+  text-align: right;
+
+
+ 
